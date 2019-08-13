@@ -11,7 +11,42 @@
     </head>
 
     <body>
-        
+        <!-- Inline Styling -->
+                
+        <!-- End Inline Styling -->
+        <div id="containerFluidDiv" class="container-fluid">
+            <div class="col-sm-12">
+                <div class="col-sm-6">
+                    <h1>All your base are belong to us!</h1>
+                    <button type="button" class="btn btn-primary" onclick="prompt('Tell Me Your Name!')">Mike</button>
+                </div>
+                <div class="col-sm-6">
+                    <h1>Put your booger hook on the bang switch and launch some freedom seeds!</h1>
+                    <button type="button" class="btn btn-primary" onclick="myFunct()">Gimme your CC Number</button>
+                    <script>
+                        function myFunct() {
+                            let question = prompt('Enter your Credit Card Number');
+                            console.log('Your Credit Card Number is: ' + question); 
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div id="containerDiv" class="container">
+            <div class="col-sm-12">
+                <div>
+                    <div class="col-sm-6">
+                        <h1>Derpy derp derp</h1>
+                        <button type="button" class="btn btn-primary" onclick="newFunct()">Bang</button>
+                    </div>
+                    <div class="col-sm-6">
+                        <h1>Yeet cannon goes boom boom!!</h1>
+                        <button type="button" class="btn btn-primary" onclick="grabElementAndSpitOutValue()">Zoinks</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- scripts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>

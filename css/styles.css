@@ -1,0 +1,40 @@
+
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch|Oswald&display=swap');
+/* 
+font-family: 'Cabin Sketch', cursive;
+font-family: 'Oswald', sans-serif;
+*/
+/* Color Theme Swatches in Hex */
+.password-1-hex { color: #111C26; }
+.password-2-hex { color: #2E4559; }
+.password-3-hex { color: #6889A6; }
+.password-4-hex { color: #D9CAC5; }
+.password-5-hex { color: #F20505; }
+/* Color Theme Swatches in RGBA */
+.password-1-rgba { color: rgba(16, 28, 38, 1); }
+.password-2-rgba { color: rgba(46, 69, 89, 1); }
+.password-3-rgba { color: rgba(104, 137, 165, 1); }
+.password-4-rgba { color: rgba(216, 202, 197, 1); }
+.password-5-rgba { color: rgba(242, 4, 4, 1); }
+/* Color Theme Swatches in HSLA */
+.password-1-hsla { color: hsla(208, 38, 10, 1); }
+.password-2-hsla { color: hsla(208, 31, 26, 1); }
+.password-3-hsla { color: hsla(208, 25, 52, 1); }
+.password-4-hsla { color: hsla(16, 20, 81, 1); }
+.password-5-hsla { color: hsla(0, 96, 48, 1); }
+
+h1 {
+    color: #F20505;
+}
+
+body {
+    background-color: #111C26;
+}
+
+.col-sm-12 {
+    background-color: #2E4559;
+}
+
+.col-sm-6 {
+    background-color: #6889A6;
+}
