@@ -35,6 +35,8 @@ h1 {
 }
 
 button {
-    background-color: #6889A6;
+    background-color: transparent;
+    border: solid 2px;
+    border-color: #F20505;
     color: #F20505;
 }
