@@ -58,3 +58,6 @@ let birthday = prompt ('What is your birthday? DD/MM/YYYY :');
 alert (`Your birthday is: ${birthday}`);
 let fixDate = new Date(birthday);
 console.log (fixDate);
+
+
+alert (`So let me get this straight... your full name is ${firstName} ${lastName} and your trying to tell me your birthday is ${birthday}`);
