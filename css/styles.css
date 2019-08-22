@@ -1,0 +1,11 @@
+.col-sm-12 {
+    background-color: #000;
+}
+
+.col-6-sm {
+    background-color: #333;
+}
+
+h1, h2 {
+    color: red;
+}
