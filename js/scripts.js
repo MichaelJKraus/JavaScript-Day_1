@@ -330,3 +330,14 @@ for (person in people) {
     console.log(people[person]);
 }
 
+for (person of people) {
+    console.log(person.firstName)
+}
+
+for (person of people) {
+    alert(person.lastName);
+}
+
+for (person of people) {
+    console.log(person.age);
+}
