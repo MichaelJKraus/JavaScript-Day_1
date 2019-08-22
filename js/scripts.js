@@ -256,16 +256,77 @@ const H1 = document.getElementById('greeting');
 // console.log(myArrayOfRandomInfo.reverse());
 
 
-// EXAMPLE -------------------------------------------------------------------------------------------------------
+// EXAMPLE Multiple Arrays-------------------------------------------------------------------------------------------------------
 
-let favoriteMoviesOne = ['Full Metal Jacket', 'Lee Ermy'];
-let favoriteMoviesTwo = ['Braveheart', 'Mel Gibson'];
-let favoriteMoviesThree = ['SpongeBob SquarePants The Movie', 'SpongeBob SquarePants'];
-let favoriteMoviesFour = ['John Wick', 'Keanu Reeves'];
-let favoriteMoviesFive = ['The Matrix', 'Laurence Fishburn'];
+// let favoriteMoviesOne = ['Full Metal Jacket', 'Lee Ermy'];
+// let favoriteMoviesTwo = ['Braveheart', 'Mel Gibson'];
+// let favoriteMoviesThree = ['SpongeBob SquarePants The Movie', 'SpongeBob SquarePants'];
+// let favoriteMoviesFour = ['John Wick', 'Keanu Reeves'];
+// let favoriteMoviesFive = ['The Matrix', 'Laurence Fishburn'];
 
-let movieTitles = [favoriteMoviesOne[0], favoriteMoviesTwo[0], favoriteMoviesThree[0], favoriteMoviesFour[0], favoriteMoviesFive[0]];
-alert(movieTitles);
-let favoriteAndNotFavorite = [favoriteMoviesOne[0], favoriteMoviesThree[0]];
-console.log(favoriteAndNotFavorite);
-alert(movieTitles.length);
+// let movieTitles = [favoriteMoviesOne[0], favoriteMoviesTwo[0], favoriteMoviesThree[0], favoriteMoviesFour[0], favoriteMoviesFive[0]];
+// alert(movieTitles);
+// let favoriteAndNotFavorite = [favoriteMoviesOne[0], favoriteMoviesThree[0]];
+// console.log(favoriteAndNotFavorite);
+// alert(movieTitles.length);
+
+// LOOPS -----------------------------------------------------------------------------------------------------------------------------
+
+// let x = 0;
+// while (x <= 10) {
+//     console.log(x);
+//     x++;
+// }
+
+// for (let i = 10; i >= 0; i--) {
+//     console.log(i);
+// }
+
+// for (let i = 0; i <= 10; i++) {
+//     console.log(i);
+// }
+// for(let j = 0; j <= 10, j++) {
+//     if (j == 4); {
+//         continue;
+//     }
+// }
+
+let i=0;
+
+// do {
+//     console.log(i);
+//     i++;
+// }
+// while (i <= 10);
+
+// let array3 = ['Mike', 2, 'John', 4, 5, 6, 7, 8, 9, 10];
+
+// array3.forEach(function(x) {
+//     console.log(x);
+// })
+
+// let myString = "Hi, my name is Mike";
+
+// for (i of myString) {
+//     console.log(i);
+// }
+
+// for (value of myString) {
+//     console.log(value);
+// }
+
+let people = [{
+    firstName: 'Mike',
+    lastName: 'Kraus',
+    age: 22
+}, 
+{
+    firstName: 'John',
+    lastName: 'Doughy',
+    age: 29
+}];
+
+for (person in people) {
+    console.log(people[person]);
+}
+
