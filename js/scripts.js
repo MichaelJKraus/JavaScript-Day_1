@@ -113,16 +113,24 @@ switch (ageEntered) {
         H1.innerHTML=`You are not old enough, please leave now`;
         break;
     case 'Yes':
-        const lessThanEighty = prompt('Are you younger than 80');
         H1.innerHTML=`Your are over 18, are you younger than 80?`;
+        const lessThanEighty = prompt('Are you younger than 80?');
         switch (lessThanEighty) {
             case 'Yes':
-                H1.innerHTML=`Cool story bro.`;
+                H1.innerHTML=`Do you even Star Wars?`;
+                const evenStarWars = prompt('Do you even Star Wars?');
+                switch (evenStarWars) {
+                    case 'Yes':
+                        H1.innerHTML=`The force is strong with this one!`;
+                        alert=('If you only knew the power, of the dark side!');
+                    case 'No':
+                        H1.innerHTML=`How dare you not Star Wars?`;
+                        break;
+                }
                 break;
             case 'No':
                 H1.innerHTML="Go eat some prunes!";
         }
-
         break;
     case (ageEntered > 80):
         H1.innerHTML=`You are too old, do you like prunes?`;
