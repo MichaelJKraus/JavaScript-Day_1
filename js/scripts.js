@@ -44,7 +44,7 @@ const H1 = document.getElementById('greeting');
 // }
 
 
-// MATH EXAMPLES -------------------------------------------------------------------------------------------------------------------
+// MATH EXAMPLES $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 // let a = 5, d= 12;
 // let b = 2;
@@ -93,7 +93,7 @@ const H1 = document.getElementById('greeting');
 //     H1.innerHTML = result;
 // }
 
-// COLOR AND PRINT TO SCREEN -------------------------------------------------------------------------------------------------------
+// COLOR AND PRINT TO SCREEN $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 // const askColor = prompt('Pick a color: Red, Blue, or Orange. Await the following response.....');
 
@@ -112,8 +112,7 @@ const H1 = document.getElementById('greeting');
 // }
 
 
-// NESTED SWITCH STATEMENTS----------------------------------------------------------------------------------------------------------
-
+// NESTED SWITCH STATEMENTS--$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 // const ageEntered = prompt('Are you over 18?');
 
 // switch (ageEntered) {
@@ -147,7 +146,7 @@ const H1 = document.getElementById('greeting');
 //         H1.innerHTML=`You didn't enter an age`;
 // }
 
-// IF ELSE IF EXAMPLE --------------------------------------------------------------------------------------------------------------
+// IF ELSE IF EXAMPLE $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 // const greeting = 1;
 
@@ -161,7 +160,7 @@ const H1 = document.getElementById('greeting');
 //     console.log('Nothing matched you NEWB!');
 // }
 
-// SWITCH STATEMENTS FOR COLORS ----------------------------------------------------------------------------------------------------
+// SWITCH STATEMENTS FOR COLORS $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 // const colorSelected = prompt('Chose a color Pink, Pinker, Pinkest: ');
 
@@ -191,7 +190,7 @@ const H1 = document.getElementById('greeting');
 //         console.log('Sorry Bro, you did not enter a proper color');
 // }
 
-// REAL LIFE EXAMPLE OF CALLING IN A FUNCTION---------------------------------------------------------------------------------------
+// REAL LIFE EXAMPLE OF CALLING IN A FUNCTION $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 // function getWeatherReport(day, time, temperature) {
 //     const correctDayFormat = day.toUpperCase();
@@ -211,7 +210,7 @@ const H1 = document.getElementById('greeting');
 
 // console.log(getWeatherReport('wednesday', '6:00PM', '90'));
 
-// ARRAY EXAMPLE ----------------------------------------------------------------------------------------------------------------
+// ARRAY EXAMPLE $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 // let myArrayOfRandomInfo = [
 //     'Full Metal Jacket',
@@ -256,7 +255,7 @@ const H1 = document.getElementById('greeting');
 // console.log(myArrayOfRandomInfo.reverse());
 
 
-// EXAMPLE Multiple Arrays-------------------------------------------------------------------------------------------------------
+// EXAMPLE Multiple Arrays $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 // let favoriteMoviesOne = ['Full Metal Jacket', 'Lee Ermy'];
 // let favoriteMoviesTwo = ['Braveheart', 'Mel Gibson'];
@@ -270,7 +269,7 @@ const H1 = document.getElementById('greeting');
 // console.log(favoriteAndNotFavorite);
 // alert(movieTitles.length);
 
-// LOOPS -----------------------------------------------------------------------------------------------------------------------------
+// LOOPS $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 // let x = 0;
 // while (x <= 10) {
@@ -348,24 +347,149 @@ let i=0;
 // const taskTwo = prompt('Give me the second take you need to complete');
 // const taskThree = prompt('Give me the Third take you need to complete');
 
-let firstArrayOfTasks = [taskOne, taskTwo, taskThree];
+// let firstArrayOfTasks = [taskOne, taskTwo, taskThree];
 
-let secondArrayOfTasks = [
-    [taskOne],
-    [taskTwo],
-    [taskThree]
-]
+// let secondArrayOfTasks = [
+//     [taskOne],
+//     [taskTwo],
+//     [taskThree]
+// ]
 
-console.log(`First Array: `, firstArrayOfTasks);
-console.log(`Second Array `, secondArrayOfTasks);
+// console.log(`First Array: `, firstArrayOfTasks);
+// console.log(`Second Array `, secondArrayOfTasks);
 
-const limit = 3;
-for(m = 0; m < limit; m++); {
-    secondArrayOfTasks[m].push(`This will take ${Math.floor(Math.random(), 15)}`);
-    console.log(secondArrayOfTasks)
-}
+// const limit = 3;
+// for(m = 0; m < limit; m++); {
+//     secondArrayOfTasks[m].push(`This will take ${Math.floor(Math.random(), 15)}`);
+//     console.log(secondArrayOfTasks)
+// }
 
 // const secondArrayOfTasks.length = 3;
 // for(m = 0; m < limit; m++); {
     
 // }
+
+// DAY 5 JS &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+
+// Anon Function
+// let example = function (val) {
+//     console.log(`Hello There`);
+// }
+
+// Named Function
+// function exampleName () {
+//     console.log(`Hello There`);
+// }
+
+// example();
+// exampleName();
+
+
+// Before Parameter
+// After Argument
+// $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+// const turnValueUppercase = val => console.log(val.toUpperCase());
+// const multiplyValues = (arg1, arg2) => {return arg1 * arg2};
+
+// turnValueUppercase('hi');
+// turnValueUppercase('hello!');
+// console.log(multiplyValues (12232, 1221321323));
+
+// function turnValueUppercase(val) {
+//     console.log(val.toUpperCase());
+// }
+
+
+// #$#$#$#$#$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$###################################################################
+
+// Grocery List 
+
+// Create a list of three names
+
+// let names = [
+//     'Mike',
+//     'Robert',
+//     'Heather',
+//     'Jhonny'
+// ];
+
+// // Create a greeting
+
+// const greeting = name => `Good Evening, ${name}`;
+
+// // test results first
+// console.log(`The array of names ${names}`, `greeting function value: ${greeting ('Example')}`);
+
+// const limit = 3;
+// // loop through names and add reading function to it
+// for(m = 0; m < names.length; m++) {
+//     console.log(greeting(names[m]));
+// }
+
+// grab element from HTML
+// const h1 = document.getElementById('greeting');
+
+// const myList = document.getElementById('groceryList');
+
+// const listItem = document.getElementById('groceryItem');
+
+// const myInput = document.getElementById('getGroceryItem');
+
+//
+
+const greeting = document.getElementById('greeting');
+
+const groceryList = document.getElementById('groceryList');
+
+const groceryItem = document.getElementById('groceryItem');
+
+const getGroceryItem = document.getElementById('getGroceryItem');
+
+
+let arrayOfGroceryItems = [];
+
+greeting.innerHTML = 'Mike\'s Grocery List';
+
+// if(groceryList === null) {
+//     groceryItem.innerHTML = 'N/A';
+// }
+
+// create function to add to grocery list
+
+// const addGroceryItem = (arr, value) => arr.push(value);
+// console.log(addGroceryItem(arrayOfGroceryItems, 'Carrot'));
+// console.log(arrayOfGroceryItems);
+
+function addGroceryItem(arr, value) {
+    arr.push(value);
+    }
+
+function ejectGroceryItemToList(val) {
+    //grab list item
+    //push array items to list
+
+    // for(grocery = 0; grocery < 2; grocery++) {
+    //     groceryItem.innerHTML = val;
+    // }
+// }
+
+
+    foreach() {
+        groceryItem.innerHTML = values;
+    }
+
+addGroceryItem(arrayOfGroceryItems, 'Testing');
+addGroceryItem(arrayOfGroceryItems, 'Fudge');
+console.log(arrayOfGroceryItems);
+ejectGroceryItemToList(arrayOfGroceryItems);
+
+
+
+
+// ##################################################################################################################################
+
+
+
+
