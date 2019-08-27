@@ -315,29 +315,57 @@ let i=0;
 //     console.log(value);
 // }
 
-let people = [{
-    firstName: 'Mike',
-    lastName: 'Kraus',
-    age: 22
-}, 
-{
-    firstName: 'John',
-    lastName: 'Doughy',
-    age: 29
-}];
+// let people = [{
+//     firstName: 'Mike',
+//     lastName: 'Kraus',
+//     age: 22
+// }, 
+// {
+//     firstName: 'John',
+//     lastName: 'Doughy',
+//     age: 29
+// }];
 
-for (person in people) {
-    console.log(people[person]);
+// for (person in people) {
+//     console.log(people[person]);
+// }
+
+// for (person of people) {
+//     console.log(person.firstName)
+// }
+
+// for (person of people) {
+//     alert(person.lastName);
+// }
+
+// for (person of people) {
+//     console.log(person.age);
+// }
+
+// create 3 variable of promt value
+
+// const taskOne = prompt('Give me the first take you need to complete');
+// const taskTwo = prompt('Give me the second take you need to complete');
+// const taskThree = prompt('Give me the Third take you need to complete');
+
+let firstArrayOfTasks = [taskOne, taskTwo, taskThree];
+
+let secondArrayOfTasks = [
+    [taskOne],
+    [taskTwo],
+    [taskThree]
+]
+
+console.log(`First Array: `, firstArrayOfTasks);
+console.log(`Second Array `, secondArrayOfTasks);
+
+const limit = 3;
+for(m = 0; m < limit; m++); {
+    secondArrayOfTasks[m].push(`This will take ${Math.floor(Math.random(), 15)}`);
+    console.log(secondArrayOfTasks)
 }
 
-for (person of people) {
-    console.log(person.firstName)
-}
-
-for (person of people) {
-    alert(person.lastName);
-}
-
-for (person of people) {
-    console.log(person.age);
-}
+// const secondArrayOfTasks.length = 3;
+// for(m = 0; m < limit; m++); {
+    
+// }
