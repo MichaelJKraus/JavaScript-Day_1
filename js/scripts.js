@@ -343,7 +343,7 @@ let i=0;
 
 // create 3 variable of promt value
 
-// const taskOne = prompt('Give me the first take you need to complete');
+// const taskOne = prompt('Give me the first task you need to complete');
 // const taskTwo = prompt('Give me the second take you need to complete');
 // const taskThree = prompt('Give me the Third take you need to complete');
 
@@ -439,34 +439,34 @@ let i=0;
 
 //
 
-const greeting = document.getElementById('greeting');
+// const greeting = document.getElementById('greeting');
 
-const groceryList = document.getElementById('groceryList');
+// const groceryList = document.getElementById('groceryList');
 
-const groceryItem = document.getElementById('groceryItem');
+// const groceryItem = document.getElementById('groceryItem');
 
-const getGroceryItem = document.getElementById('getGroceryItem');
+// const getGroceryItem = document.getElementById('getGroceryItem');
 
 
-let arrayOfGroceryItems = [];
+// let arrayOfGroceryItems = [];
 
-greeting.innerHTML = 'Mike\'s Grocery List';
+// greeting.innerHTML = 'Mike\'s Grocery List';
 
-// if(groceryList === null) {
-//     groceryItem.innerHTML = 'N/A';
-// }
+// // if(groceryList === null) {
+// //     groceryItem.innerHTML = 'N/A';
+// // }
 
-// create function to add to grocery list
+// // create function to add to grocery list
 
-// const addGroceryItem = (arr, value) => arr.push(value);
-// console.log(addGroceryItem(arrayOfGroceryItems, 'Carrot'));
-// console.log(arrayOfGroceryItems);
+// // const addGroceryItem = (arr, value) => arr.push(value);
+// // console.log(addGroceryItem(arrayOfGroceryItems, 'Carrot'));
+// // console.log(arrayOfGroceryItems);
 
-function addGroceryItem(arr, value) {
-    arr.push(value);
-    }
+// function addGroceryItem(arr, value) {
+//     arr.push(value);
+//     }
 
-function ejectGroceryItemToList(val) {
+// function ejectGroceryItemToList(val) {
     //grab list item
     //push array items to list
 
@@ -476,30 +476,43 @@ function ejectGroceryItemToList(val) {
 // }
 
 
-    foreach() {
-        groceryItem.innerHTML = values;
-    }
+    // foreach() {
+    //     groceryItem.innerHTML = values;
+    // }
 
-addGroceryItem(arrayOfGroceryItems, 'Testing');
-addGroceryItem(arrayOfGroceryItems, 'Fudge');
-console.log(arrayOfGroceryItems);
-ejectGroceryItemToList(arrayOfGroceryItems);
+// addGroceryItem(arrayOfGroceryItems, 'Testing');
+// addGroceryItem(arrayOfGroceryItems, 'Fudge');
+// console.log(arrayOfGroceryItems);
+// ejectGroceryItemToList(arrayOfGroceryItems);
 
-function ejectGroceryItemToList(values) { 
-    //goal: push array items to list on html
-​
-    /* the reason I called my list items in here because i need to loop through the id #'s to add individual array values into them, i do this by adding the `grocery` param by one so it adds; i am just appending the GROCERY val to the name to the id*/
-    for (grocery = 0; grocery < arrayOfGroceryItems.length; grocery++) {
-            let li = document.getElementById(`groceryItem${grocery + 1}`);
-            // now that I can loop through my list items, i can now eject EACH array val into EACH seperate list item.
-            li.innerHTML = values[grocery];
-        }
-}
+// function ejectGroceryItemToList(values) { 
+//     //goal: push array items to list on html
+// ​
+//     /* the reason I called my list items in here because i need to loop through the id #'s to add individual array values into them, i do this by adding the `grocery` param by one so it adds; i am just appending the GROCERY val to the name to the id*/
+//     for (grocery = 0; grocery < arrayOfGroceryItems.length; grocery++) {
+//             let li = document.getElementById(`groceryItem${grocery + 1}`);
+//             // now that I can loop through my list items, i can now eject EACH array val into EACH separate list item.
+//             li.innerHTML = values[grocery];
+//         }
+// }
 
 
 
 // ##################################################################################################################################
 
+let fahrenheitTemperature = prompt('Please enter the current temperature in Farenheit: ');
+let convertedFahrenheitTemperature = ((fahrenheitTemperature - 32) * 5 / 9);
 
+alert(`The current temperature in Fahrenheit is: ${fahrenheitTemperature} degrees. The current temperature in Celsius is: ${convertedFahrenheitTemperature} degrees.`);
 
+let celsiusTemperature = prompt(`Please enter the current temperature in Celsius: `);
+let convertedCelsiusTemperature =((celsiusTemperature *9  / 5) + 32);
 
+alert(`The current temperature in Celsius is: ${celsiusTemperature} degrees. The current temperature in Fahrenheit is: ${convertedCelsiusTemperature} degrees.`);
+
+console.log(convertedFahrenheitTemperature);
+console.log(convertedCelsiusTemperature);
+
+const H3 = document.getElementById('whatIsTheTemperatureInFahrenheit');
+H3.innerHTML = convertedCelsiusTemperature;
+console.log(H3);
