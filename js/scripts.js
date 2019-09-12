@@ -62,23 +62,23 @@
 
 // globalAttributes();
 
-const body = document.body;
-const container = document.createElement('div');
-container.className = 'container-fluid text-center';
+// const body = document.body;
+// const container = document.createElement('div');
+// container.className = 'container-fluid text-center';
 
-let test = body.appendChild(container);
-console.log('my html: ', test);
+// let test = body.appendChild(container);
+// console.log('my html: ', test);
 
-const row = document.createElement('main');
-row.className = 'row';
+// const row = document.createElement('main');
+// row.className = 'row';
 
-const content = document.createElement('div');
+// const content = document.createElement('div');
 
-content.className = 'col-md-6 col-md-offset-2 content';
+// content.className = 'col-md-6 col-md-offset-2 content';
 
-row.appendChild(content);
-container.appendChild(row);
-body.appendChild(container);
+// row.appendChild(content);
+// container.appendChild(row);
+// body.appendChild(container);
 
 // form tag > input email > input subject > text area > button for submit
 
@@ -89,33 +89,32 @@ body.appendChild(container);
 //     return label;
 // }
 
-const form = document.createElement('form');
-form.setAttribute('method', 'GET');
-form.setAttribute('action', 'js/form-submission.js');
-// form.setAttribute('name', 'myForm');
-content.appendChild(form);
+// const form = document.createElement('form');
+// form.setAttribute('method', 'GET');
+// form.setAttribute('action', 'js/form-submission.js');
+// content.appendChild(form);
 
 
-const inputEmail = document.createElement('input');
-inputEmail.setAttribute('class', 'form-control');
-inputEmail.setAttribute('type', 'text');
-inputEmail.setAttribute('name', 'email');
-inputEmail.setAttribute('placeholder', 'email@example.com');
+// const inputEmail = document.createElement('input');
+// inputEmail.setAttribute('class', 'form-control');
+// inputEmail.setAttribute('type', 'text');
+// inputEmail.setAttribute('name', 'email');
+// inputEmail.setAttribute('placeholder', 'email@example.com');
 
-const subjectLine = document.createElement('input');
-subjectLine.setAttribute('class', 'form-control');
-subjectLine.setAttribute('type', 'text');
-subjectLine.setAttribute('placeholder', 'Subject:');
+// const subjectLine = document.createElement('input');
+// subjectLine.setAttribute('class', 'form-control');
+// subjectLine.setAttribute('type', 'text');
+// subjectLine.setAttribute('placeholder', 'Subject:');
 
-const textArea = document.createElement('textarea');
-textArea.setAttribute('class', 'form-control');
-textArea.setAttribute('type', 'textArea');
-textArea.setAttribute('placeholder', 'Message:');
+// const textArea = document.createElement('textarea');
+// textArea.setAttribute('class', 'form-control');
+// textArea.setAttribute('type', 'textArea');
+// textArea.setAttribute('placeholder', 'Message:');
 
-const submitButton = document.createElement('button');
-submitButton.className = 'btn-primary btn';
-submitButton.setAttribute('type', 'Submit!');
-submitButton.innerText = 'Submit Message';
+// const submitButton = document.createElement('button');
+// submitButton.className = 'btn-primary btn';
+// submitButton.setAttribute('type', 'Submit!');
+// submitButton.innerText = 'Submit Message';
 
 // const labelForEmail = labelGenerator('email', 'Email');
 // const labelForSubject = labelGenerator('');
@@ -126,17 +125,51 @@ submitButton.innerText = 'Submit Message';
 // labelForMessage.appendChild(inputMessage);
 
 // labelForMessage.appendChild();
-form.appendChild(inputEmail);
-form.appendChild(subjectLine);
-form.appendChild(textArea);
-form.appendChild(submitButton);
+// form.appendChild(inputEmail);
+// form.appendChild(subjectLine);
+// form.appendChild(textArea);
+// form.appendChild(submitButton);
 
 
 
 
 
+const container = document.createElement('main');
+// container.className = 'container';
+container.classList.add('container');
+// container.classList.remove('container');
+document.body.appendChild(container);
+container.innerHTML = '<h1>Hello</h1>';
+console.log(container);
 
+function movieQuote() {
+    alert('Mine Mine Mineeee!')
+    // alert('Your killing me smalls!');
+}
 
+// let timer = ;
+
+function callQuote() {
+    let timer = setInterval(movieQuote, 3000);
+}
+
+function stopFromRunning() {
+    clearInterval(timer, 10000);
+}
+
+const button = document.createElement('button');
+button.setAttribute('onclick', 'callQuote()');
+button.innerText = 'click For A Movie Quote!';
+button.className = 'btn btn-primary btn-lg';
+container.appendChild(button);
+
+const stopButton = document.createElement('button');
+stopButton.className = 'alert alert-danger border-danger border';
+stopButton.setAttribute('onclick', 'stopFromRunning()');
+stopButton.innerText = 'Stop';
+button.addEventListener('click', () => {
+    container.appendChild(stopButton);
+})
 
 
 
@@ -168,3 +201,10 @@ form.appendChild(submitButton);
 
 // console.log(globalFormElements('input', 'text', 'example, form-control bg-primary', 'Type your example here.'));
 // console.log(globalFormElements('textarea', 'text', 'message', 'bg-danger', 'Please, enter your concerns here:'));
+
+
+sessionStorage.setItem('TEMPORARY', 'Every problem is temporary.');
+sessionStorage.getItem('TEMPORARY');
+
+localStorage.setItem('DEATH', 'Except for death - Grace');
+localStorage.getItem('DEATH');

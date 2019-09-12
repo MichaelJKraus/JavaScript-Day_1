@@ -1,0 +1,10 @@
+.row {
+    background-color: #666666;
+}
+
+.content {
+    background-color: snow;
+    padding: 0.5em;
+    font-family: 'Courier New', sans-serif;
+    min-height: 100vh;
+}
